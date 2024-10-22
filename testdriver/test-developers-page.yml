@@ -1,0 +1,14 @@
+version: 4.0.70
+steps:
+  - prompt: Click on "Developers" in the header.
+    commands:
+      - command: hover-text
+        text: Developers
+        description: link in the header
+        action: click
+  - prompt: >-
+      Assert that the developers page loads with resources available.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: the developers page loads with resources available
