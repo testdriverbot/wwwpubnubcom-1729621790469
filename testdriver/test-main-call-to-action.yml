@@ -1,0 +1,35 @@
+version: 4.0.70
+steps:
+  - prompt: Click on "Start Building".
+    commands:
+      - command: hover-text
+        text: Start Building
+        description: button to start building
+        action: click
+  - prompt: Click on "Start Building".
+    commands:
+      - command: scroll-until-text
+        text: Start Building
+        direction: down
+      - command: hover-text
+        text: Start Building
+        description: button to start building
+        action: click
+  - prompt: Click on "Start Building".
+    commands:
+      - command: scroll-until-text
+        text: Start Building
+        direction: down
+      - command: hover-text
+        text: Start Building
+        description: button to start building
+        action: click
+      - command: scroll-until-text
+        text: Start Building
+        direction: down
+  - prompt: >-
+      Assert that the user is taken to the appropriate start building page.  #
+      Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: the start building page is displayed
