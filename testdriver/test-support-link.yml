@@ -1,0 +1,14 @@
+version: 4.0.70
+steps:
+  - prompt: Click on "Support" in the top navigation.
+    commands:
+      - command: hover-text
+        text: SUPPORT
+        description: support link in the top navigation
+        action: click
+  - prompt: >-
+      Assert that the support page or a help section is accessible.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: the support page is accessible
