@@ -1,0 +1,8 @@
+version: 4.0.70
+steps:
+  - prompt: >-
+      Assert that the PubNub logo is visible on the homepage.  # Use the content
+      of the file from the environment
+    commands:
+      - command: assert
+        expect: the PubNub logo is visible on the homepage
