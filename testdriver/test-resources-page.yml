@@ -1,0 +1,16 @@
+version: 4.0.70
+steps:
+  - prompt: Click on "Resources" in the header.
+    commands:
+      - command: hover-text
+        text: Resources
+        description: link in the header
+        action: click
+  - prompt: >-
+      Assert that resources are shown and accessible.  # Use the content of the
+      file from the environment
+    commands:
+      - command: assert
+        expect: >-
+          the resources menu is open and options like Blog, Demos, Solution
+          Briefs, Guides, Customers, eBooks, Careers, and About Us are visible
